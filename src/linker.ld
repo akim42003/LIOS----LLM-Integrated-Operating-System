@@ -3,7 +3,7 @@ ENTRY(_start)
 
 SECTIONS
 {
-    /*code at 1MiB
+    /* code at 1MiB */
     . = 0x00100000;
 
     .text : {
