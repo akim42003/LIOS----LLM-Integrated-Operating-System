@@ -10,8 +10,8 @@ SECTIONS
         *(.multiboot)
         *(.text)
 
-    .rodata : {*(.rodata)}
-    .data : {*(.data)}
+    .rodata : { *(.rodata) }
+    .data : { *(.data) }
     .bss : {
         *(.bss)
         *(COMMON)
