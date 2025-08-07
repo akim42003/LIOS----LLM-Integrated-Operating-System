@@ -9,9 +9,15 @@ SECTIONS
     .text : {
         *(.multiboot)
         *(.text)
+    }
+    .rodata : {
+    *(.rodata)
+    }
 
-    .rodata : { *(.rodata) }
-    .data : { *(.data) }
+    .data : {
+    *(.data)
+    }
+
     .bss : {
         *(.bss)
         *(COMMON)
