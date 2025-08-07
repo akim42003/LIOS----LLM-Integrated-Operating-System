@@ -1,7 +1,7 @@
 OUTPUT_FORMAT("elf32-i386")
 ENTRY(_start)
 
-SECTION
+SECTIONS
 {
     /*code at 1MiB
     . =1M;
