@@ -4,12 +4,11 @@ ENTRY(_start)
 SECTIONS
 {
     /*code at 1MiB
-    . =1M;
+    . = 0x00100000;
 
     .text : {
-        *(.multiboot) /* if using multiboot header*/
-        *(.text) /* this is all the code */
-    }
+        *(.multiboot)
+        *(.text)
 
     .rodata : {*(.rodata)}
     .data : {*(.data)}
